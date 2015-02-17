@@ -1,8 +1,8 @@
 {
   "name": "node-at",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Module which performs like Linux's 'at' command",
-  "main": "index.js",
+  "main": "lib/at.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "coffee -o lib -c src"
