@@ -1,0 +1,22 @@
+{
+  "name": "node-at",
+  "version": "0.0.0",
+  "description": "Module which performs like Linux's 'at' command",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TakayukiSakai/node-at.git"
+  },
+  "keywords": [
+    "at"
+  ],
+  "author": "Takayuki Sakai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TakayukiSakai/node-at/issues"
+  },
+  "homepage": "https://github.com/TakayukiSakai/node-at"
+}
