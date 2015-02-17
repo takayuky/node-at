@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/TakayukiSakai/node-at/issues"
   },
-  "homepage": "https://github.com/TakayukiSakai/node-at"
+  "homepage": "https://github.com/TakayukiSakai/node-at",
+  "devDependencies": {
+    "chai": "^2.0.0",
+    "mocha": "^2.1.0"
+  }
 }
