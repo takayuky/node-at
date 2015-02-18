@@ -1,6 +1,6 @@
 {
   "name": "node-at",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Module which performs like Linux's 'at' command",
   "main": "lib/at.js",
   "scripts": {
