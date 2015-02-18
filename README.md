@@ -2,17 +2,27 @@
 
 node-at is a job scheduler performing like Linux's 'at' command. Jobs set by this scheduler will be executed only once unlike cron. This module uses `setTimeout` function in it.
 
+# install
+```
+npm install node-at
+```
+
 # Usage
 
 ```javascript
 var at = require('at');
-at.schedule('8:20', function(data) {
+// if it's past a.m.8:20 already, this job will be executed tomorrow.
+// if not, this job will be executed today.
+at.schedule('08:20', function(data) {
+    // do everything you want here!
+});
+
+// only future date is accepted.
+at.schedule('2015-04-01 08:20', function(data) {
     // do everything you want here!
 });
 ```
 
-If current time is past '8:20', the job scheduled with above code will be excuted at the time on the next day.
+This module supports "HH:mm" format, aside from "YYYY-MM-DD HH:mm", "YYYY/MM/DD HH:mm", "YYYY.MM.DD HH:mm".
 
-This module supports only "HH:mm" syntax yet.
-
-I will support "YY/MM/DD HH:mm", "YY.MM.DD HH:mm", "YYMMDD HH:mm" and "HH:mm +2days" syntax in the near future.
+I will support "HH:mm +2days" format in the near future.
