@@ -1,8 +1,9 @@
+lt = require'long-timeout'
 moment = require 'moment'
 
 module.exports =
   schedule: (date_str, callback) ->
-    setTimeout callback, this._getTimeDiff(date_str)
+    lt.setTimeout callback, this._getTimeDiff(date_str)
 
   _getTimeDiff: (date_str, now = moment()) ->
     this._parseStrToMoment(date_str).valueOf() - now.valueOf()
