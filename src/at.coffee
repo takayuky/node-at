@@ -1,4 +1,4 @@
-lt = require'long-timeout'
+lt = require 'long-timeout'
 moment = require 'moment'
 
 module.exports =
